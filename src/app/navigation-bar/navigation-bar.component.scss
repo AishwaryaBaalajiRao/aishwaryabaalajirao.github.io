@@ -1,0 +1,39 @@
+.mat-toolbar {
+    position: fixed;
+    z-index: 1040;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  
+.navigation_background {
+    background: inherit;
+}
+
+.nav_bar {
+    width: 100%; 
+    max-width: 30rem;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1rem;
+    margin-left: 3rem;
+}
+
+.linkedin_icon {
+    background: url('../../assets/icons/icons8-linkedin.svg');
+    width: 30px;
+    height: 30px;
+}
+
+.github_icon {
+    background: url('../../assets/icons/icons8-github.svg');
+    width: 30px;
+    height: 30px;
+}
+
+.icon_spacer {
+    display: flex;
+    justify-content: space-around;
+    min-width: 6rem;
+}

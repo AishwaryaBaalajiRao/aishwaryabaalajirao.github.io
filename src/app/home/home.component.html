@@ -1,0 +1,77 @@
+<app-navigation-bar></app-navigation-bar>
+
+<div class="container_background">
+
+    <div class="home_section">
+
+        <div class="heading_container">
+            <h1 class="heading_title">Hi! I'm Aishwarya Baalaji Rao.
+                <span class="sub_title">A Software Developer</span>
+            </h1>
+            <p class="sub_heading">I am a creative, data-driven software enthusiast in the USA; also adept in Project Management!</p>
+            <button mat-stroked-button color="primary" class="button" (click)="scroll(target)">Click here to view my journey 
+                <mat-icon class="material-icons-outlined arrow_forward">
+                    arrow_forward
+                </mat-icon>
+                <mat-icon class="material-icons-outlined arrow_downward">
+                    arrow_downward
+                </mat-icon>
+            </button>
+        </div>
+
+        <div class="robot">
+        <div class="antenna"></div>
+        <div class="outerbody">
+        <div class="face">
+            <div class="eyes">
+                <div class="eye" (document:mousemove)="onMouseMove($event)" id="eye"></div>
+                <div class="eye" (document:mousemove)="onMouseMove($event)" id="eye"></div>
+            </div>
+        </div>
+        <div class="left_hand"></div>
+        <div class="right_hand"></div>
+    </div>
+    <div class="shadow"></div>
+</div>
+
+
+</div>
+
+<div #target style="margin-top: 2rem;"></div>
+<div class="landing_section">
+    <mat-tab-group mat-align-tabs="center">
+    <mat-tab label="Technology Projects">
+
+        <div class="t_tiles">
+
+            <div class="tech_description">
+                {{tech_description}}
+            </div>
+
+            <div class="t_tile tile1" (click)="getMLWorks()"></div>
+
+            <div class="t_tile tile2" (click)="getFoodRecog()"></div>
+    
+            <div class="t_tile tile3" (click)="getChickFilA()"></div>
+        </div>
+    </mat-tab>
+    <mat-tab label="Management Case Studies">
+        <div class="t_tiles">
+
+            <div class="tech_description">
+                {{mgmt_description}}
+            </div>
+    
+            <div class="t_tile">
+    
+            </div>
+    
+            <div class="t_tile">
+                
+            </div>
+        </div>
+    </mat-tab>
+    </mat-tab-group>
+</div>
+
+</div>

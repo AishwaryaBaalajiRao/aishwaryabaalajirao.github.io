@@ -1,0 +1,345 @@
+.container_background {
+    position: relative;
+    z-index: 1000;
+    padding-top: 65px;
+    height: -webkit-fill-available;
+    background: #e8dee6;
+}
+
+@media (min-width: 1300px) {
+.home_section {
+    padding: 3em 7em 3em 0;
+}
+}
+
+@media (min-width: 1000px) {
+.home_section {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+}
+
+@media (min-width: 544px) {
+.home_section {
+    padding: 2em 0 0;
+}
+}
+
+.home_section {
+    padding: 0;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.heading_container {
+    opacity: 1;
+    transform: translateY(0px);
+    box-sizing: border-box;
+    max-width: 70%;
+    min-width: 0;
+    -ms-flex: 1;
+    flex: 1;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+    -webkit-flex: 1;
+}
+
+.heading_title {
+    color: #232320;
+    font-family: Bogart,Recoleta,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 3.5em;
+    letter-spacing: 0.5px;
+    line-height: 120%;
+    font-weight: bold;
+    margin: 0;
+    transition: all .2s ease-in-out;
+}
+
+@media (min-width: 1000px) {
+.heading_title {
+    font-size: 4.5em;
+}
+}
+
+@media (min-width: 768px) {
+.sub_title {
+    display: block!important;
+}
+}
+
+.marginTop {
+    margin-top: 5rem;
+}
+
+.sub_heading {
+    margin-top: 4.2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.robot {
+    margin: 0 auto;
+}
+
+@keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 15px;
+    }
+  }
+
+@keyframes shadow {
+    from {
+      transform: translate(0, m(-0.5)) scale(1, 1);
+      background-color: rgba(black, 0.1);
+    }
+    to {
+      transform: translate(0, 0) scale(1.3, 1);
+      background-color: rgba(black, 0.05);
+    }
+}
+
+.shadow {
+    position: relative;
+    margin-top: 2rem;
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+    width: 14rem;
+    margin-left: 3rem;
+    animation: shadow 1500ms ease-in-out alternate infinite;
+}
+
+.outerbody {
+    position: relative;
+    width: 300px;
+    height: 472px;
+    border-radius: 47%;
+    background: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: MoveUpDown 3s linear infinite;
+    z-index: 2;
+}
+
+.face {
+    position: relative;
+    width: 230px;
+    height: 180px;
+    border-radius: 36%;
+    background: rgba(0, 0, 0, 0.87);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10rem;
+    top: 0;
+    left: 3.2rem;
+    z-index: 2;
+}
+
+.face::before{
+    content: "";
+    position: absolute;
+    top: 106px;
+    width: 120px;
+    height: 55px;
+    background: 8ac1f4;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    transition: 0.5s;
+    background: #15e4e2;
+}
+
+.face:hover::before {
+    top: 125px;
+    width: 150px;
+    height: 20px;
+    background: #15e4e2;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.eyes
+{
+    position: relative;
+    top: -40px;
+    display: flex
+}
+
+.eyes .eye{
+    position: relative;
+    width: 64px;
+    height: 52px;
+    display: block;
+    background: #15e4e2;
+    margin: 0 15px;
+    border-radius: 50%;
+}
+
+.eyes .eye::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background: rgb(0 0 0 / 87%);
+    border-radius: 50%;
+}
+
+.antenna {
+    position: relative;
+    width: 25px;
+    height: 99px;
+    border-radius: 48%;
+    background: #fafafa;
+    right: -10rem;
+    top: 2rem;
+    transform: rotate(16deg);
+    animation: MoveUpDown 3s linear infinite;
+}
+
+.left_hand {
+    position: relative;
+    width: 60px;
+    height: 200px;
+    border-radius: 48%;
+    background: #fafafa;
+    right: 14rem;
+    top: 2rem;
+    transform: rotate(16deg);
+    z-index: 1;
+}
+
+@keyframes wave {
+    from { transform: rotate(-20deg); }
+    to { transform: rotate(-45deg); }
+  }
+
+.right_hand {
+    position: relative;
+    width: 60px;
+    height: 200px;
+    border-radius: 48%;
+    background: #fafafa;
+    right: 0.5rem;
+    top: 3rem;
+    transform: rotate(-20deg);
+    transform-origin: top left;
+    animation: wave 1.5s alternate ease-in-out infinite;
+    z-index: 1;
+}
+
+.button {
+    margin-top: 5.2rem;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    padding: 1rem;
+}
+
+.button:hover {
+    background-color: rgb(14, 112, 241);
+    color: #fff;
+}
+
+.arrow_forward {
+    font-weight: 700;
+    margin-left: 0.2rem;
+}
+
+.button:hover .arrow_forward {
+    display: none;
+}
+
+.button:hover .arrow_downward {
+    display: inline-block;
+    font-weight: 700;
+}
+
+.button .arrow_downward {
+    display: none;
+}
+
+.landing_section {
+    position: relative;
+    z-index: 1000;
+    margin: 10em auto 0;
+    max-width: 90%;
+    display: -ms-grid;
+    display: grid;
+    gap: 4em;
+}
+
+.t_tiles {
+    position: relative;
+    z-index: 1000;
+    margin: 10em auto 0;
+    max-width: 65%;
+    display: -ms-grid;
+    display: grid;
+    gap: 4em;
+}
+
+@media (min-width: 544px) {
+.t_tiles {
+    gap: 7em;
+    margin: 120px auto 0;
+}
+}
+
+.tech_description {
+    max-width: 27em;
+    font-size: 18px;
+    line-height: 2;
+    text-align: justify;
+}
+
+@media (min-width: 1230px) {
+.t_tile {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0;
+    height: 500px;
+}
+}
+
+.t_tile {
+    border-radius: 20px;
+    position: relative;
+    display: block;
+    transition: all .4s ease-in-out;
+    padding: 3em 3em 4em;
+    cursor: pointer;
+    z-index: 1;
+}
+
+@media (min-width: 544px) {
+.t_tile:hover {
+    transform: translate3d(0,-5px,0);
+    box-shadow: 0 52px 74px rgb(0 0 0 / 12%);
+}
+}
+
+.tile1 {
+    background: linear-gradient(#28313b,#485461);
+}
+
+.tile2 {
+    background: linear-gradient(#eecda3,#ef629f);
+}
+
+.tile3 {
+    background: linear-gradient(#43cea2 ,#185a9d);
+}
