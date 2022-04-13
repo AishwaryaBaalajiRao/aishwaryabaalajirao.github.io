@@ -1,0 +1,69 @@
+<app-navigation-bar></app-navigation-bar>
+
+<div class="container_background">
+
+    <div class="heading_section">
+        <h1 class="title">
+            Food Recognition & Calorie Estimation
+            <span class="description">{{description}}</span>
+        </h1>
+    </div>
+
+    <div class="pic_grid content">
+
+        </div>
+
+<div class="paragraph_section">
+          <h1 class="paragraph_title">
+              My Role
+          </h1>
+            <p class="paragraph_description">{{role1}}</p>
+            <p class="paragraph_description">{{role2}}</p>
+          
+      </div>
+
+      <div class="paragraph_section">
+        <h1 class="paragraph_title">
+            The Product and Evolution
+        </h1>
+        <p class="paragraph_description">{{product1}}</p>
+        <p class="paragraph_description">{{product2}}</p>
+    </div>
+
+    <div class="paragraph_section">
+        <h1 class="paragraph_title">
+            Metrics
+        </h1>
+        <div class="paragraph_description">
+          <p *ngFor="let metric of metrics" style="display: flex;">
+            <mat-icon matListIcon class="bullet_icon">fiber_manual_record</mat-icon>
+              {{ metric }}
+          </p>
+        </div>
+    </div>
+
+    <div class="paragraph_section">
+        <h1 class="paragraph_title">
+            Limitations / Future Work
+        </h1>
+        <div class="paragraph_description">
+          <p *ngFor="let limit of limits" style="display: flex;">
+            <mat-icon matListIcon class="bullet_icon">fiber_manual_record</mat-icon>
+              {{ limit }}
+          </p>
+        </div>
+    </div>
+
+    <div class="paragraph_section">
+        <h1 class="paragraph_title">
+            Key Takeaways
+        </h1>
+        <div class="paragraph_description">
+          <p *ngFor="let takeaway of takeaways" style="display: flex;">
+            <mat-icon matListIcon class="bullet_icon">fiber_manual_record</mat-icon>
+              {{ takeaway }}
+          </p>
+        </div>
+    </div>
+
+</div>

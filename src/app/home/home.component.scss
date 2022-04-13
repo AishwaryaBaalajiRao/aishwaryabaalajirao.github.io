@@ -1,6 +1,5 @@
 .container_background {
     position: relative;
-    z-index: 1000;
     padding-top: 65px;
     height: -webkit-fill-available;
     background: #e8dee6;
@@ -295,6 +294,15 @@
 }
 }
 
+.project_title {
+    max-width: 27em;
+    font-size: 36px;
+    font-weight: bold;
+    position: relative;
+    margin: 3em auto 0;
+    max-width: 65%;
+}
+
 .tech_description {
     max-width: 27em;
     font-size: 18px;
@@ -318,11 +326,15 @@
 .t_tile {
     border-radius: 20px;
     position: relative;
-    display: block;
+    display: flex;
     transition: all .4s ease-in-out;
     padding: 3em 3em 4em;
     cursor: pointer;
     z-index: 1;
+}
+
+.tile_logo {
+    image-resolution: 3000;
 }
 
 @media (min-width: 544px) {
@@ -342,4 +354,14 @@
 
 .tile3 {
     background: linear-gradient(#43cea2 ,#185a9d);
+}
+
+.matlab_logo {
+    height: 220px;
+    width: 340px;
+}
+
+.tableau_logo {
+    height: 220px;
+    width: 480px;
 }

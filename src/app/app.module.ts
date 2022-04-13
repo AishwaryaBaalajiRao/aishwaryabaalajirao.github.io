@@ -9,13 +9,17 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { HomeComponent } from './home/home.component';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 import { MlworksComponent } from './home/mlworks/mlworks.component';
+import { FoodrecognitionComponent } from './home/foodrecognition/foodrecognition.component';
+import { ChickfilaComponent } from './home/chickfila/chickfila.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavigationBarComponent,
-    MlworksComponent
+    MlworksComponent,
+    FoodrecognitionComponent,
+    ChickfilaComponent
   ],
   imports: [
     BrowserModule,

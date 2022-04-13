@@ -42,20 +42,35 @@
     <mat-tab-group mat-align-tabs="center">
     <mat-tab label="Technology Projects">
 
+        <div class="project_title">
+            Technology Projects
+        </div>
+
         <div class="t_tiles">
 
             <div class="tech_description">
                 {{tech_description}}
             </div>
 
-            <div class="t_tile tile1" (click)="getMLWorks()"></div>
+            <div class="t_tile tile1" (click)="getMLWorks()">
+                <img class="tile_logo" src="../../assets/icons/MLW Logo">
+            </div>
 
-            <div class="t_tile tile2" (click)="getFoodRecog()"></div>
+            <div class="t_tile tile2" (click)="getFoodRecog()">
+                <img class="matlab_logo" src="../../assets/icons/Matlab Logo.webp">
+            </div>
     
-            <div class="t_tile tile3" (click)="getChickFilA()"></div>
+            <div class="t_tile tile3" (click)="getChickFilA()">
+                <img class="tableau_logo" src="../../assets/icons/tableau logo.png">
+            </div>
         </div>
     </mat-tab>
     <mat-tab label="Management Case Studies">
+
+        <div class="project_title">
+            Management Case Studies
+        </div>
+
         <div class="t_tiles">
 
             <div class="tech_description">

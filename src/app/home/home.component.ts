@@ -40,11 +40,11 @@ getMLWorks() {
 }
 
 getFoodRecog() {
-
+  this.route.navigate(['/foodrecogn']);
 }
 
 getChickFilA() {
-  
+  this.route.navigate(['/analytics']);
 }
   
 
