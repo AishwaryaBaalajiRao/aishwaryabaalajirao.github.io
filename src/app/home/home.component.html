@@ -34,8 +34,8 @@
     <div class="shadow"></div>
 </div>
 
-
 </div>
+
 
 <div #target style="margin-top: 2rem;"></div>
 <div class="landing_section">
@@ -65,28 +65,50 @@
             </div>
         </div>
     </mat-tab>
-    <mat-tab label="Management Case Studies">
 
+
+    <mat-tab label="Management Case Studies">
         <div class="project_title">
             Management Case Studies
         </div>
 
         <div class="t_tiles">
-
-            <div class="tech_description">
+            <div class="tech_description marginBottom">
                 {{mgmt_description}}
             </div>
-    
-            <div class="t_tile">
-    
-            </div>
-    
-            <div class="t_tile">
-                
-            </div>
         </div>
+
+        <div fxLayout="row wrap" fxLayoutGap="0px grid">
+            <div fxFlex="50%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let tile of [1,2]" style="max-height: 200px;">
+                <div class="t_tile mtile1" (click)="getCaseStudies('ryanair')" *ngIf="tile == 1">
+                    <img class="mlogo" src="../../assets/icons/Ryanair Logo.png">
+                </div>
+                <div class="t_tile mtile2" (click)="getCaseStudies('primark')" *ngIf="tile == 2">
+                    <img class="mlogo" src="../../assets/icons/Primark-logo.png">
+                </div>
+            </div>
+            <div fxFlex="50%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let tile of [1,2]">
+                <div class="t_tile mtile3" (click)="getCaseStudies('lv')" *ngIf="tile == 1">
+                    <img class="mlogo" src="../../assets/icons/LV Logo.png">
+                </div>
+                <div class="t_tile mtile4" (click)="getCaseStudies('newell')" *ngIf="tile == 2">
+                    <img class="mlogo" src="../../assets/icons/Newell Logo.png">
+                </div>
+            </div>
+            <div fxFlex="50%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let tile of [1,2]">
+                <div class="t_tile mtile5" (click)="getCaseStudies('anglo')" *ngIf="tile == 1">
+                    <img class="mlogo" src="../../assets/icons/Anglo American Logo.png">
+                </div>
+                <div class="t_tile mtile6" (click)="getCaseStudies('amazoncn')" *ngIf="tile == 2">
+                    <img class="mlogo" src="../../assets/icons/Amazon China Logo.png">
+                </div>
+            </div>
+          </div>
+
     </mat-tab>
     </mat-tab-group>
 </div>
+
+<br><br><br>
 
 </div>

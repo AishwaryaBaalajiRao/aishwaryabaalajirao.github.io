@@ -1,0 +1,25 @@
+<app-navigation-bar></app-navigation-bar>
+
+<div class="container_background">
+
+    <div class="heading_section">
+        <h1 class="title">
+            {{title}}
+            <span class="description">{{description}}</span>
+        </h1>
+    </div>
+
+    <div class="pdf_container">
+    <ngx-extended-pdf-viewer
+	[src]="pdfDocument"
+	[useBrowserLocale]="true"
+	[textLayer]="true"
+	[showHandToolButton]="true"
+	[showPresentationModeButton]="true"
+	[showDownloadButton]="true"
+></ngx-extended-pdf-viewer>
+</div>
+
+<br><br><br>
+
+</div>

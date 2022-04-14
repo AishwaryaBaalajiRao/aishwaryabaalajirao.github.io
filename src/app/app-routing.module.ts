@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CaseStudiesComponent } from './home/case-studies/case-studies.component';
 import { ChickfilaComponent } from './home/chickfila/chickfila.component';
 import { FoodrecognitionComponent } from './home/foodrecognition/foodrecognition.component';
 import { HomeComponent } from './home/home.component';
@@ -9,7 +10,8 @@ const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'mlworks', component: MlworksComponent},
   {path: 'foodrecogn', component: FoodrecognitionComponent},
-  {path: 'analytics', component: ChickfilaComponent}
+  {path: 'analytics', component: ChickfilaComponent},
+  {path: 'caseStudies', component: CaseStudiesComponent}
 ];
 
 @NgModule({

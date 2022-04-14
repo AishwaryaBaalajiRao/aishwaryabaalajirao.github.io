@@ -46,6 +46,10 @@ getFoodRecog() {
 getChickFilA() {
   this.route.navigate(['/analytics']);
 }
+
+getCaseStudies(projName: any) {
+  this.route.navigate(['/caseStudies', {proj: projName}]);
+}
   
 
 }
