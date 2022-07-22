@@ -7,7 +7,7 @@
 
 @media (min-width: 768px) {
 .container_background {
-    padding: 75px 0 0;
+    padding: 75px 0 75px;
 }
 }
 
@@ -26,8 +26,10 @@
 .heading_section {
     max-width: 90%;
     margin: 0 auto;
-    padding: 9em 7em 9em 7em;
+    padding: 9em 7em 9em 8em;
     transition: all .2s ease-in-out;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .title {
@@ -52,7 +54,7 @@
     font-size: 18px;
     line-height: 32px;
     margin-top: 4rem;
-    max-width: 40%;
+    max-width: 55%;
     text-align: justify;
     color: #e6e6e2;
     letter-spacing: normal;
@@ -131,4 +133,14 @@
 .bullet_icon {
     margin-top: 0.3rem;
     margin-right: 0.7rem;
+}
+
+.techUsed {
+    color: whitesmoke;
+    width: 70%;
+}
+
+.techLogo {
+    height: 100px;
+    width: 100px;
 }

@@ -13,6 +13,9 @@ import { MlworksComponent } from './home/mlworks/mlworks.component';
 import { FoodrecognitionComponent } from './home/foodrecognition/foodrecognition.component';
 import { ChickfilaComponent } from './home/chickfila/chickfila.component';
 import { CaseStudiesComponent } from './home/case-studies/case-studies.component';
+import { ResumeComponent } from './resume/resume.component';
+import { AboutComponent } from './about/about.component';
+import { ConnectComponent } from './connect/connect.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { CaseStudiesComponent } from './home/case-studies/case-studies.component
     MlworksComponent,
     FoodrecognitionComponent,
     ChickfilaComponent,
-    CaseStudiesComponent
+    CaseStudiesComponent,
+    ResumeComponent,
+    AboutComponent,
+    ConnectComponent
   ],
   imports: [
     BrowserModule,

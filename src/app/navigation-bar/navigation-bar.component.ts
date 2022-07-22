@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class NavigationBarComponent implements OnInit {
 
-  links = ['Work', 'Resume', 'About + Connect'];
+  links = ['Work', 'Resume', 'About Me'];
   changeNavColor = false;
   navBGColor: any;
   navTextColor: any;
@@ -34,6 +34,17 @@ export class NavigationBarComponent implements OnInit {
     } else {
       this.navTextColor = 'black';
       this.navBGColor = '#e8dee6';
+    }
+  }
+
+  navRoute(link: any) {
+    if (link === 'Work') {
+      this.router.navigate(['/']);
+    }
+    else if (link === 'Resume') {
+      this.router.navigate(['/resume']);
+    } else if (link === 'About Me') {
+      this.router.navigate(['/about']);
     }
   }
 

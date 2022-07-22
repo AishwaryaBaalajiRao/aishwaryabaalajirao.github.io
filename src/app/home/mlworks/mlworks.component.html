@@ -3,11 +3,19 @@
 <div class="container_background">
 
     <div class="heading_section">
+      <div>
         <h1 class="title">
-            ML Works
-            <span class="description">{{description}}</span>
-        </h1>
-        <button mat-flat-button color="primary" class="mlworks_button">View ML Works Website</button>
+          ML Works
+          <span class="description">{{description}}</span>
+      </h1>
+      <button mat-flat-button color="primary" class="mlworks_button">View ML Works Website</button>
+      </div>
+      <div class="techUsed">
+        <h2>Technology Used:</h2>
+        <div>
+          <img [src]="logo" *ngFor="let logo of logos" class="techLogo">
+        </div>
+      </div>
     </div>
 
     <div class="pic_grid content">

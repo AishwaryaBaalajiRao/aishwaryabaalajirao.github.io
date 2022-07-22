@@ -1,7 +1,6 @@
 .container_background {
     position: relative;
     padding-top: 75px;
-    height: -webkit-fill-available;
     background: #e8dee6;
 }
 
@@ -57,6 +56,9 @@
     font-weight: bold;
     margin: 0;
     transition: all .2s ease-in-out;
+    background: -webkit-linear-gradient(#5C258D, #4389A2);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 @media (min-width: 1000px) {
@@ -365,32 +367,32 @@
 }
 
 .mtile1 {
-    background: linear-gradient(315deg, #4c4177 0%, #2a5470 74%);
+    background: rgba(43,71,121,255);
     max-height: 300px;
 }
 
 .mtile2 {
-    background: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+    background: rgba(1,174,219,255);
     max-height: 300px;
 }
 
 .mtile3 {
-    background: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
+    background: rgba(0,0,0,255);
     max-height: 300px;
 }
 
 .mtile4 {
-    background: radial-gradient(#6daddb, #313131);
+    background: rgba(12,59,83,255);
     max-height: 300px;
 }
 
 .mtile5 {
-    background: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);
+    background: rgba(178,209,233,255);
     max-height: 300px;
 }
 
 .mtile6 {
-    background: linear-gradient(#FFC72C, #ffdd00);
+    background: rgba(235,190,98,255);
     max-height: 300px;
 }
 

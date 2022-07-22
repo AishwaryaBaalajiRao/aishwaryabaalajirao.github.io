@@ -1,6 +1,6 @@
 <mat-toolbar [ngStyle]="{'background': navBGColor, 'color': navTextColor}">
     <div  class="nav_bar">
-        <span *ngFor="let link of links" class="">{{ link }}</span>
+        <span *ngFor="let link of links" (click)="navRoute(link)" class="link">{{ link }}</span>
     </div>
     <span class="example-spacer"></span>
     <div class="icon_spacer">

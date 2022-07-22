@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MlworksComponent implements OnInit {
 
+  logos = ['../../../assets/icons/Angular.png', '../../../assets/icons/mongodb.jpg', '../../../assets/icons/typescript.png', '../../../assets/icons/NodeJS.png'];
   description = 'ML Works is a full-stack machine learning model management accelerator that enables MLOps at scale, from model development and orchestration to monitoring, health, diagnostics, governance, and business metric tracking. It offers white-box model deployment and monitoring, ensuring the comprehensive evaluation of the model\'s provenance, transparency, and explainability.';
   role1 = 'I held the position of a full stack frontend developer for the ML Works product. I had the honor of being the sole frontend UI web developer for the demo application of ML Works where I developed multi webpages in under 5 days, kickstarting the development process into high gear.'
   role2 = 'Apart from the data-driven website development, I hep additional responsibilities like technical documentation for the team, requirement acquisitions directly from the product manager, close collaboration with data engineers and data scientists of the team for data visualization purposes.';
