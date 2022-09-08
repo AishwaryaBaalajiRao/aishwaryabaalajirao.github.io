@@ -16,6 +16,9 @@ import { CaseStudiesComponent } from './home/case-studies/case-studies.component
 import { ResumeComponent } from './resume/resume.component';
 import { AboutComponent } from './about/about.component';
 import { ConnectComponent } from './connect/connect.component';
+import { GalleryModule } from '@ks89/angular-modal-gallery';
+import 'hammerjs';
+import 'mousetrap';
 
 @NgModule({
   declarations: [
@@ -36,7 +39,8 @@ import { ConnectComponent } from './connect/connect.component';
     BrowserAnimationsModule,
     FlexLayoutModule,
     NgxExtendedPdfViewerModule,
-    AngularMaterialModule
+    AngularMaterialModule,
+    GalleryModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -3,12 +3,11 @@
 <div class="container_background">
 
     <div class="heading_section">
-      <div>
+      <div style="margin-right: 6rem;">
         <h1 class="title">
-          ML Works
+          Data Visualization using Python 
           <span class="description">{{description}}</span>
       </h1>
-      <button mat-flat-button color="primary" class="mlworks_button">View ML Works Website</button>
       </div>
       <div class="techUsed">
         <h2>Technology Used:</h2>
@@ -20,37 +19,10 @@
 
     <div class="pic_grid content">
 
-        <div fxLayout="row wrap" fxLayoutGap="16px grid">
-          <div fxFlex="100%" fxFlex.xs="100%" fxFlex.sm="33%">
-              <img class="mlwLogo" src="../../../assets/icons/MLW1.png">
-          </div>
-        </div>
-
-        <br>
-
-        <div fxLayout="row wrap" fxLayoutGap="23px grid">
-          <div fxFlex="50%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let num of [1,2]">
-              <div *ngIf="num == 1">
-                <img class="mlwLogo" src="../../../assets/icons/MLW2.png">
-              </div>
-              <div *ngIf="num == 2">
-                <img class="mlwLogo screenLogo" src="../../../assets/icons/MLW Setup Page.png">
-              </div>
-          </div>
-        </div>
-
-        <br>
-
-        <div fxLayout="row wrap" fxLayoutGap="23px grid">
-          <div fxFlex="50%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let num of [1,2]">
-              <div *ngIf="num == 1">
-                <img class="mlwLogo screenLogo" src="../../../assets/icons/MLW Summary Page.png">
-              </div>
-              <div *ngIf="num == 2">
-                <img class="mlwLogo" src="../../../assets/icons/MLW3.png">
-              </div>
-            </div>
-        </div>
+      <section>
+        <ks-carousel [id]="102" [images]="imagesRect" [config]="LIBCONFIG102">
+        </ks-carousel>
+      </section>
 
         </div>
 
@@ -62,14 +34,6 @@
             <p class="paragraph_description">{{role2}}</p>
           
       </div>
-
-      <div class="paragraph_section">
-        <h1 class="paragraph_title">
-            The Product and Evolution
-        </h1>
-        <p class="paragraph_description">{{product1}}</p>
-        <p class="paragraph_description">{{product2}}</p>
-    </div>
 
     <div class="paragraph_section">
       <h1 class="paragraph_title">

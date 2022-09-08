@@ -45,7 +45,7 @@
 
 @media (min-width: 768px) {
 .title {
-    font-size: 70px;
+    font-size: 67px;
 }
 }
 
@@ -138,9 +138,34 @@
 .techUsed {
     color: whitesmoke;
     width: 70%;
+    margin-top: 5rem;
 }
 
 .techLogo {
     height: 100px;
     width: 100px;
 }
+
+@media (max-width: 600px) {
+    .heading_section {
+       display: block;
+       padding: 5em 3em 5em 3em;
+    }
+
+    .description {
+        max-width: 100%;
+    }
+
+    .techUsed {
+        width: 100%;
+    }
+
+    .paragraph_section {
+        padding: 2em;
+    }
+
+    .paragraph_description {
+        max-width: 90%;
+    }
+
+    }
