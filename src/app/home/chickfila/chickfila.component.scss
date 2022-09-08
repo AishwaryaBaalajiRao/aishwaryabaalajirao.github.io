@@ -122,3 +122,27 @@
 .tableauImg {
     max-width: 100%;
 }
+
+@media (max-width: 600px) {
+    .heading_section {
+       display: block;
+       padding: 5em 3em 5em 3em;
+    }
+
+    .description {
+        max-width: 100%;
+    }
+
+    .techUsed {
+        width: 100%;
+    }
+
+    .paragraph_section {
+        padding: 2em;
+    }
+
+    .paragraph_description {
+        max-width: 90%;
+    }
+
+    }
