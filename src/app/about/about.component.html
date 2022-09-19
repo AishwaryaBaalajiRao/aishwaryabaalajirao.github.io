@@ -1,33 +1,118 @@
 <app-navigation-bar></app-navigation-bar>
 
-<div class="container_background">
-    <div class="heading_section">
-        <h1 class="title">
-            My Journey
-            <span class="description"></span>
-        </h1>
+<section class="journey_title section">
+  <div class="bg"></div>
+  <div class="heading_section">
+    <h1 class="title">
+        Scroll Down to View My Journey
+    </h1>
+  <div style="display: flex;">
+   <div class="animatedCircle"></div>
+   <div class="animatedCircle1"></div>
+   <div class="animatedCircle2"></div>
+  </div>
+  </div>
+</section>
+
+<section class="bg2 section"> 
+</section>
+
+<section class="bg3 section">
+  <div class="bg"></div>
+
+  <div class="heading_section">
+    <h1 class="title" data-aos="fade-up" data-aos-duration="2000">
+        Personal Bio
+    </h1>
+  </div>
+<div class="about_content">
+  <div fxLayout="row wrap" fxLayoutGap="50px grid">
+    <div fxFlex="65%" fxFlex.xs="100%" fxFlex.sm="33%" class="red">
+      <div class="paragraph_section" data-aos="fade-up" data-aos-duration="2000">
+          <p class="paragraph_description">{{bio2}}</p>   
+          <p class="paragraph_description">{{bio3}}</p>   
+      </div>    
     </div>
+    <div fxFlex="35%" fxFlex.xs="100%" fxFlex.sm="33%">
+      <img src="../../assets/images/prof_dp.jpeg" class="bio_pic" data-aos="fade-up" data-aos-duration="2000">
+  </div>
+  </div>
+  </div>
+</section>
 
-    <div class="about_content">
-
-        <div fxLayout="row wrap" fxLayoutGap="50px grid">
-
-          <div fxFlex="50%" fxFlex.xs="100%" fxFlex.sm="33%" class="red">
-            <div class="paragraph_section">
-                <p class="paragraph_description">{{bio1}}</p>
-                <p class="paragraph_description">{{bio2}}</p>   
-                <p class="paragraph_description">{{bio3}}</p>   
-            </div>    
-          </div>
-
-          <div fxFlex="50%" fxFlex.xs="100%" fxFlex.sm="33%">
-            <img src="../../assets/images/prof_dp.jpeg" class="bio_pic">
-        </div>
-
-        </div>
-
-        <br>
-    </div>
+<section class="bg4 section"> 
+</section>
 
 
-</div>
+<section class="bg5">
+  <div class="heading_section">
+    <h1 class="title">
+        Timeline
+    </h1>
+  </div>
+<section class="timeline">
+  <div class="container">
+
+    <div class="timeline-item" data-aos="fade-right" data-aos-duration="3000">
+      <div class="timeline-img"></div>
+      <div class="timeline-content">
+        <h2 style="margin: 16px 0 16px">Undergraduate Degree</h2>
+        <h2>Electronics and Communication Engineering</h2>
+        <img src="../../assets/icons/PESUniv.png" class="pesIcon">
+        <div class="date">2015 - 2019</div>
+        <div class="trophy_div"><img src="../../assets/icons/trophy.png" style="height: 35px;"><h2 style="margin: 16px 0 16px;">Achievements</h2></div>
+        <p>
+          <mat-list>
+            <mat-list-item *ngFor="let achievement of achievements" class="list_items">
+              <mat-icon matListIcon>fiber_manual_record</mat-icon>
+              {{ achievement }}
+            </mat-list-item>
+          </mat-list>
+        </p>
+      </div>
+    </div> 
+
+    <div class="timeline-item" data-aos="fade-left" data-aos-duration="3000">
+      <div class="timeline-img"></div>
+      <div class="timeline-content">
+        <h2 style="margin: 16px 0 16px">Software Engineer | Senior Software Engineer</h2>
+        <div style="display: flex; align-items: end">
+        <img src="../../assets/icons/TredenceLogo.png" class="pesIcon">
+        <h2>Tredence Inc.</h2>
+      </div>
+        <div class="date">2019 - 2021</div>
+        <div class="trophy_div"><img src="../../assets/icons/trophy.png" style="height: 35px;"><h2 style="margin: 16px 0 16px;">Achievements</h2></div>
+        <p>
+          <mat-list>
+            <mat-list-item *ngFor="let achievement of workachievements" class="list_items">
+              <mat-icon matListIcon>fiber_manual_record</mat-icon>
+              {{ achievement }}
+            </mat-list-item>
+          </mat-list>
+        </p>
+      </div>
+    </div> 
+
+    <div class="timeline-item" data-aos="fade-right" data-aos-duration="3000">
+      <div class="timeline-img"></div>
+      <div class="timeline-content">
+        <h2 style="margin: 16px 0 16px">Master's Degree</h2>
+        <h2>Gloabl Management & Data Science</h2>
+        <img src="../../assets/icons/ASU.png" class="asuIcon">
+        <div class="date">2021 - 2023</div>
+        <div class="trophy_div"><img src="../../assets/icons/trophy.png" style="height: 35px;"><h2 style="margin: 16px 0 16px;">Achievements</h2></div>
+        <p>
+          <mat-list>
+            <mat-list-item *ngFor="let achievement of asuachievements" class="list_items">
+              <mat-icon matListIcon>fiber_manual_record</mat-icon>
+              {{ achievement }}
+            </mat-list-item>
+          </mat-list>
+        </p>
+      </div>
+    </div> 
+
+  </div>
+</section>
+</section>
+

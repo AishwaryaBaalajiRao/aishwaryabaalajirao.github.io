@@ -1,24 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import {trigger, style, animate, transition} from '@angular/animations';
+import * as AOS from "aos";
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss'],
-  animations: [
-    trigger('fade', [ 
-      transition('void => *', [
-        style({ opacity: 0 }), 
-        animate(2000, style({opacity: 1}))
-      ]) 
-    ])
-  ]
+  styleUrls: ['./home.component.scss']
 })
+
 export class HomeComponent implements OnInit {
 
-  tech_description = 'View my most significant technology projects varying from machine learning, frontend development and data analytics. The projects have been performed over the course of my undergraduate studies, work experience and masters program.  Simply click on each of the tiles below to learn more about the project and my role in them.'
-  mgmt_description = 'View my most significant case studies on diverse high-performing organizations, which are based on a Harvard Course Pack that details the enormous problems these businesses confront in areas such as business strategy, leadership, and global business settings.  Simply click on the company name to view/download the case study in PDF format.'
+  tech_description = 'View my most significant technology projects varying from machine learning, frontend development and data analytics. The projects have been performed over the course of my undergraduate studies, work experience and masters program.  Simply click on each of the tiles below to learn more about the project and my role in them.';
+  mgmt_description = 'View my most significant case studies on diverse high-performing organizations, which are based on a Harvard Course Pack that details the enormous problems these businesses confront in areas such as business strategy, leadership, and global business settings.  Simply click on the company name to view/download the case study in PDF format.';
 
   onMouseMove(e: any) {
     console.log(e);
@@ -37,6 +30,8 @@ export class HomeComponent implements OnInit {
   constructor(private route:Router) { }
 
   ngOnInit(): void {
+
+    AOS.init();
    
   }
 

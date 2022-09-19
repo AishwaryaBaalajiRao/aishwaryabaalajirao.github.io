@@ -2,6 +2,7 @@
     position: relative;
     z-index: 1000;
     padding: 75px 0 6em;
+    overflow-x: hidden;
 }
 
 @media (min-width: 768px) {
@@ -17,16 +18,18 @@
 }
 
 @media (min-width: 768px) {
-.heading_section {
-    padding: 14em 0;
-}
 }
 
 .heading_section {
-    max-width: 90%;
-    margin: 0 auto;
-    padding: 5em 7em 3em 7em;
+    max-width: 100%;
     transition: all .2s ease-in-out;
+}
+
+.journey_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,230,222,255);
 }
 
 .title {
@@ -38,6 +41,7 @@
     font-family: Bogart,Recoleta,Helvetica Neue,Helvetica,Arial,sans-serif !important;
     font-weight: 500;
     text-align: center;
+    padding: 2rem;
 }
 
 @media (min-width: 768px) {
@@ -48,8 +52,9 @@
 
 .about_content {
     box-sizing: border-box;
-    margin-right: 10em;
-    margin-left: 10em;
+    margin-right: 5em;
+    margin-left: 5em;
+    text-align: center;
 }
 
 @media (min-width: 1452px) {
@@ -68,14 +73,335 @@
 .paragraph_description {
     margin: 0 auto;
     font-size: 18px;
-    line-height: 32px;
-    margin-top: 3rem;
+    line-height: 42px;
+    margin-top: 1.5rem;
     text-align: justify;
     letter-spacing: normal;
 }
 
 .bio_pic {
     border-radius: 50%;
-    height: 650px;
-    margin-top: 4.5rem;
+    height: 500px;
+}
+
+.edu_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grad_pic {
+    height: 18em;
+}
+
+.pesIcon {
+    height: 100px;
+}
+
+.asuIcon {
+    height: 110px;
+    width: 420px;
+}
+
+.section {
+    position: relative;
+    height: 100vh;
+  }
+  
+  .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  h1 {
+    z-index: 1;
+  }
+  
+.animatedCircle, .animatedCircle1, .animatedCircle2 {
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 4rem;
+    position: absolute;
+    bottom: 0;
+}
+
+.animatedCircle1 {
+    left: 40%;
+    animation: bounce 0.5s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: cubic-bezier(
+            .5, 0.05, 1, .5);
+    -webkit-animation-iteration-count: infinite;
+}
+
+.animatedCircle2 {
+    left: 45%;
+    animation: bounce 0.6s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: cubic-bezier(
+            .5, 0.05, 1, .5);
+    -webkit-animation-iteration-count: infinite;
+}
+
+.animatedCircle {
+    left: 50%;
+    animation: bounce 0.7s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: cubic-bezier(
+            .5, 0.05, 1, .5);
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+    from {
+        transform: translate3d(0, -50px, 0);
+    }
+    to {
+        transform: translate3d(0, 50px, 0);
+    }
+}
+
+.bg2 {
+    background: linear-gradient(rgb(255, 230, 222), rgb(182, 179, 189));
+}
+
+.bg3 {
+    background: rgb(182, 179, 189);
+}
+
+.bg4 {
+    background: linear-gradient(rgb(182, 179, 189), rgb(255, 255, 255));
+}
+
+.bg5 {
+    background: rgb(255, 255, 255);
+    position: relative;
+    height: 235vh;
+}
+
+
+// TimeLine
+  
+  .timeline {
+  
+      position: relative;
+  
+      &::before {
+          content: '';
+          background: #C5CAE9;
+          width: 5px;
+          height: 95%;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+      }
+  }
+  
+  .timeline-item {
+      width: 100%;
+      margin-bottom: 70px;
+  
+      &:nth-child(even) {
+  
+          .timeline-content {
+              float: right;
+              padding: 40px 30px 10px 30px;
+  
+              .date {
+                  right: auto;
+                  left: 0;
+              }
+  
+              &::after {
+                  content: '';
+                  position: absolute;
+                  border-style: solid;
+                  width: 0;
+                  height: 0;
+                  top: 30px;
+                  left: -15px;
+                  border-width: 10px 15px 10px 0;
+                  border-color: transparent #f5f5f5 transparent transparent;
+              }
+          }
+      }
+  
+      &::after {
+          content: '';
+          display: block;
+          clear: both;
+      }
+  }
+  
+  
+  .timeline-content {
+      position: relative;
+      width: 40%;
+      padding: 10px 30px;
+      border-radius: 4px;
+      background: #f5f5f5;
+      box-shadow: 0 20px 25px -15px rgba(0, 0, 0, .3);
+  
+      &::after {
+          content: '';
+          position: absolute;
+          border-style: solid;
+          width: 0;
+          height: 0;
+          top: 30px;
+          right: -15px;
+          border-width: 10px 0 10px 15px;
+          border-color: transparent transparent transparent #f5f5f5;
+      }
+  }
+  
+  .timeline-img {
+      width: 30px;
+      height: 30px;
+      background: #3F51B5;
+      border-radius: 50%;
+      position: absolute;
+      left: 50%;
+      margin-top: 25px;
+      margin-left: -15px;
+  }
+  
+  a {
+      background: #3F51B5;
+      color: #FFFFFF;
+      padding: 8px 20px;
+      text-transform: uppercase;
+      font-size: 14px;
+      margin-bottom: 20px;
+      margin-top: 10px;
+      display: inline-block;
+      border-radius: 2px;
+      box-shadow: 0 1px 3px -1px rgba(0, 0, 0, .6);
+  
+      &:hover, &:active, &:focus {
+          background: darken(#3F51B5, 10%);
+          color: #FFFFFF;
+          text-decoration: none;
+      }
+  
+  }
+  
+  .timeline-card {
+  
+      p {
+          padding: 0 20px;
+      }
+  
+      a {
+          margin-left: 20px;
+      }
+  }
+  
+  .timeline-item {
+    .timeline-img-header {
+              background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0, .4)), url('https://picsum.photos/1000/800/?random') center center no-repeat;
+              background-size: cover;
+          }
+  }
+  
+  .timeline-img-header {
+  
+      height: 200px;
+      position: relative;
+      margin-bottom: 20px;
+  
+      h2 {
+          color: #FFFFFF;
+          position: absolute;
+          bottom: 5px;
+          left: 20px;
+      }
+  }
+  
+  .date {
+      background: #FF4081;
+      display: inline-block;
+      color: #FFFFFF;
+      padding: 10px;
+      position: absolute;
+      top: 0;
+      right: 0;
+  }
+
+  .container {
+    padding: 100px 100px;
+  }
+  
+  @media screen and (max-width: 768px) {
+  
+      .timeline {
+  
+          &::before {
+              left: 50px;
+          }
+  
+          .timeline-img {
+              left: 50px;
+          }
+  
+          .timeline-content {
+              max-width: 100%;
+              width: auto;
+              margin-left: 70px;
+          }
+  
+          .timeline-item {
+  
+              &:nth-child(even) {
+  
+                  .timeline-content {
+                      float: none;
+  
+                  }
+              }
+  
+              &:nth-child(odd) {
+  
+                  .timeline-content {
+                      
+                      &::after {
+                          content: '';
+                          position: absolute;
+                          border-style: solid;
+                          width: 0;
+                          height: 0;
+                          top: 30px;
+                          left: -15px;
+                          border-width: 10px 15px 10px 0;
+                          border-color: transparent #f5f5f5 transparent transparent;
+                      }
+                  }
+  
+              }
+          }
+      }
+      
+  }
+
+.trophy_div {
+    display: flex; 
+    align-items: center;
 }

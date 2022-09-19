@@ -31,6 +31,9 @@ export class NavigationBarComponent implements OnInit {
     } else if (routeName === '/analytics') {
       this.navTextColor = 'white';
       this.navBGColor = '#43cea2';
+    } else if (routeName === '/about') {
+      this.navTextColor = 'white';
+      this.navBGColor = 'black';
     } else {
       this.navTextColor = 'black';
       this.navBGColor = '#e8dee6';

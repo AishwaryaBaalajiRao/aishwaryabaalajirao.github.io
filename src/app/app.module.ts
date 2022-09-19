@@ -19,6 +19,12 @@ import { ConnectComponent } from './connect/connect.component';
 import { GalleryModule } from '@ks89/angular-modal-gallery';
 import 'hammerjs';
 import 'mousetrap';
+import { AppearDirective } from './directive.module';
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import Flip from "gsap/Flip";
+import Draggable from "gsap/Draggable";
+gsap.registerPlugin(ScrollTrigger, Draggable, Flip); 
 
 @NgModule({
   declarations: [
@@ -31,7 +37,8 @@ import 'mousetrap';
     CaseStudiesComponent,
     ResumeComponent,
     AboutComponent,
-    ConnectComponent
+    ConnectComponent,
+    AppearDirective
   ],
   imports: [
     BrowserModule,
