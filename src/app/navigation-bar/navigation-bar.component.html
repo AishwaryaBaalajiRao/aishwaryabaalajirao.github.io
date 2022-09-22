@@ -1,14 +1,14 @@
-<mat-toolbar [ngStyle]="{'background': navBGColor, 'color': navTextColor}">
+<mat-toolbar class="bg" [ngStyle]="{'background': navBGColor, 'color': navTextColor}">
     <div  class="nav_bar">
         <span *ngFor="let link of links" (click)="navRoute(link)" class="link">{{ link }}</span>
     </div>
     <span class="example-spacer"></span>
     <div class="icon_spacer">
         <a href="https://www.linkedin.com/in/aishwaryabaalajirao/" target="blank">
-             <button mat-icon-button class="linkedin_icon"></button>
+             <button mat-icon-button><img src="../../assets/icons/icons8-linkedin.svg" class="linkedin_icon"></button>
         </a>
         <a href="https://github.com/AishwaryaBaalajiRao" target="blank">
-            <button mat-icon-button class="github_icon"></button>
+            <button mat-icon-button><img src="../../assets/icons/github.png" class="github_icon"></button>
        </a>
     </div>
   </mat-toolbar>

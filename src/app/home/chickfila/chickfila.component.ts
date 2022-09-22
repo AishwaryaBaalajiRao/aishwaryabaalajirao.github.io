@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as AOS from "aos";
 
 @Component({
   selector: 'app-chickfila',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChickfilaComponent implements OnInit {
 
+  logos = ['../../../assets/icons/tableau.png'];
   description = 'Market research conducted for Chick-fil-A using data analytics and visualization tool – Tableau. The focus is to provide recommendations for the US market, taking into consideration the current global political and economic factors that might affect Chick-fil-A’s business. We then use PESTLE analysis to determine an optimal foreign location for profitable expansion based on the data.';
   role1 = 'Took ownership and lead of the project from start through to the finish. Analysed the data given to us, brainstormed patterns in the data and created a visual dashboard to showcase the company’s performance based on 4P’s analysis (Product, Place, Price and Promotion) using Tableau.';
   role2 = 'As a project lead, I also delegated tasks to my team members, provided guidance, supervised communication and collaboration within the team for efficient completion of tasks. Conducted research on analysing and finding patterns in data to derive actionable insights.';
@@ -29,6 +31,7 @@ takeaways = ['Learnt a new skill and software in the area of data analytics usin
   constructor() { }
 
   ngOnInit(): void {
+    AOS.init();
   }
 
 }

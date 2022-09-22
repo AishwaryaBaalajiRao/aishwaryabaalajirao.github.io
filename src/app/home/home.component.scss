@@ -35,10 +35,8 @@
 
 .heading_container {
     opacity: 1;
-    transform: translateY(0px);
     box-sizing: border-box;
-    margin-top: 7rem;
-    max-width: 70%;
+    margin: 4rem;
     min-width: 0;
     -ms-flex: 1;
     flex: 1;
@@ -79,12 +77,12 @@
 
 .sub_heading {
     margin-top: 4.2rem;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: 600;
 }
 
 .robot {
-    margin: 0 auto;
+    margin-right: 2rem;
 }
 
 @keyframes MoveUpDown {
@@ -245,10 +243,12 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 700;
     padding: 1rem;
+    border-radius: 2.25em;
+    height: 4em;
 }
 
 .button:hover {
-    background-color: rgb(14, 112, 241);
+    background: radial-gradient(#614385, #516395);
     color: #fff;
 }
 
@@ -273,7 +273,7 @@
 .landing_section {
     position: relative;
     z-index: 1000;
-    margin: 10em auto 0;
+    margin: 10em;
     max-width: 90%;
     display: -ms-grid;
     display: grid;
@@ -334,6 +334,11 @@
     padding: 3em 3em 4em;
     cursor: pointer;
     z-index: 1;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 500px;
 }
 
 .tile_logo {
@@ -348,22 +353,21 @@
 }
 
 .tile1 {
-    background: linear-gradient(#28313b,#485461);
+    background: linear-gradient(#faaca8, #ddd6f3);
 }
 
 .tile2 {
-    background: linear-gradient(#eecda3,#ef629f);
+    background: linear-gradient(#4ca1af,#c4e0e5);
 }
 
 .tile3 {
-    background: linear-gradient(#43cea2 ,#185a9d);
+    background: linear-gradient(#9FA5D5 ,#E8F5C8);
 }
 
 .mlogo {
     display: flex;
     justify-content: center;
     align-self: center;
-    height: 180px;
 }
 
 .mtile1 {
@@ -395,6 +399,15 @@
     background: rgba(235,190,98,255);
     max-height: 300px;
 }
+
+.l1 {
+    height: 100px;
+}
+
+.l2 {
+    height: 180px;
+}
+
 
 .matlab_logo {
     height: 220px;

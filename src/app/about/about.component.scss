@@ -29,7 +29,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(255,230,222,255);
+    background: rgba(255,255,255);
 }
 
 .title {
@@ -95,12 +95,11 @@
 }
 
 .pesIcon {
-    height: 100px;
+    height: 4rem;
 }
 
 .asuIcon {
-    height: 110px;
-    width: 420px;
+    height: 5rem;
 }
 
 .section {
@@ -180,7 +179,8 @@
 }
 
 .bg2 {
-    background: linear-gradient(rgb(255, 230, 222), rgb(182, 179, 189));
+    // background: linear-gradient(rgb(255, 230, 222), rgb(182, 179, 189));
+    background: linear-gradient(rgb(255, 255, 255), rgb(182, 179, 189));
 }
 
 .bg3 {
@@ -188,11 +188,11 @@
 }
 
 .bg4 {
-    background: linear-gradient(rgb(182, 179, 189), rgb(255, 255, 255));
+    background: linear-gradient(rgb(182, 179, 189), #e8dee6);
 }
 
 .bg5 {
-    background: rgb(255, 255, 255);
+    background: #e8dee6;
     position: relative;
     height: 235vh;
 }

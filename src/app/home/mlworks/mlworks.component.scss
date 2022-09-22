@@ -2,7 +2,8 @@
     position: relative;
     z-index: 1000;
     padding: 75px 0 6em;
-    background: linear-gradient(#28313b,#485461) !important;
+    background: #ddd6f3 !important;
+    color: black;
 }
 
 @media (min-width: 768px) {
@@ -38,7 +39,6 @@
     font-size: 50px;
     letter-spacing: 1px;
     line-height: 120%;
-    color: #eeeee9;
     font-family: Bogart,Recoleta,Helvetica Neue,Helvetica,Arial,sans-serif !important;
     font-weight: 500;
 }
@@ -56,13 +56,7 @@
     margin-top: 4rem;
     max-width: 55%;
     text-align: justify;
-    color: #e6e6e2;
     letter-spacing: normal;
-}
-
-.mlworks_button {
-    color: whitesmoke;
-    margin-top: 2rem;
 }
 
 .pic_grid {
@@ -114,7 +108,6 @@
     font-size: 30px;
     letter-spacing: 0.7px;
     line-height: 120%;
-    color: #eeeee9;
     font-family: Bogart,Recoleta,Helvetica Neue,Helvetica,Arial,sans-serif !important;
     font-weight: bold;
 }
@@ -126,7 +119,6 @@
     margin-top: 3rem;
     max-width: 50%;
     text-align: justify;
-    color: #e6e6e2;
     letter-spacing: normal;
 }
 
@@ -136,7 +128,6 @@
 }
 
 .techUsed {
-    color: whitesmoke;
     width: 70%;
     margin-top: 5rem;
 }

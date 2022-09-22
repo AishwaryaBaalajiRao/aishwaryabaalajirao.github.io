@@ -25,14 +25,12 @@
 }
 
 .linkedin_icon {
-    background: url('../../assets/icons/icons8-linkedin.svg');
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
 }
 
 .github_icon {
-    background: url('../../assets/icons/icons8-github.svg');
-    width: 30px;
+    width: 35px;
     height: 30px;
 }
 
@@ -42,4 +40,9 @@
     min-width: 18rem;
     margin-right: 1.5rem;
     margin-top: -0.3rem;
+}
+
+.bg {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
 }

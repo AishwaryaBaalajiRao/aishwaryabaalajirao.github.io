@@ -1,10 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import {
-  AccessibilityConfig,
   CarouselLibConfig,
-  Image,
-  ImageEvent
+  Image
 } from '@ks89/angular-modal-gallery';
+import * as AOS from "aos";
 
 @Component({
   selector: 'app-mlworks',
@@ -106,6 +105,7 @@ LIBCONFIG102: CarouselLibConfig = {
   constructor() { }
 
   ngOnInit(): void {
+    AOS.init();
   }
 
 }

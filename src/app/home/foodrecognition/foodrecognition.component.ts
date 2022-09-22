@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as AOS from "aos";
 
 @Component({
   selector: 'app-foodrecognition',
@@ -7,13 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FoodrecognitionComponent implements OnInit {
 
+  logos = ['../../../assets/icons/matlab.png', '../../../assets/icons/excel.png'];
   description = 'An ML-powered product food recognition from an input image and estimate calories. The product can recognize the food item from an image fed to it based on color, shape, and texture, determine average weight of the item, and estimate the calories.';
   role1 = 'As the project team leader, I worked with a group of two other classmates to take this product from an idea to a successful final year thesis project during our undergraduate studies (A+ Grade). I conducted research, delegated tasks, data cleaning processes, coded the machine learning models (AlexNet and ResNet-50) for food recognition, color feature extraction using histogram gradient, managed deadlines, and created phase wise reports & presentations.';
   role2 = 'As team lead, I also had additional responsibilities to be on top of the deadlines, handle team conflicts efficiently, delegate tasks based on the strengths of individual team members and provide guidance and support.';
   product1 = 'The idea to develop this product came from the concept that – people are very conscious of their diet these days. Obesity has long been a problem in society and people are more aware than ever about what they eat and how much they eat. This is still a premature product that was developed based on my fundamental concepts of machine learning. The idea has a potential to become a full fledge product that could be on everyone’s smartphones to capture a picture of the food they are consuming and get an accurate calories estimation.';
   product2 = 'We took a sample dataset, Food-101 with 10,000 images as a training dataset for our machine learning models – AlexNet and ResNet-50. We then trained the two models on a separate test data which was self-created using consistent artificial lighting. Lastly, a regression model was used to estimate the calories based on the food identified by the model. The end user can feed any image from one of the categories the model is trained on to accurately get the food name as well as the average estimated calories.';
   metrics = ['Used color segmentation using K-means clustering to preprocess the food images before feeding it to the classifier.',
-'Used convolutional neural networks (AlexNet and ResNet-50) and a k-nearest neighbor method for classifying the image.',
+'Used convolutional neural networks (AlexNet and ResNet-50) and a k-nearest neighbor method for classifying the image. Data was stored in Excel sheets.',
 'Used multi-class linear regression analysis to predict the calories amount.',
 'Each food category from the Food 101 dataset contains 800 training and 200 test images. The images have been rescaled to a unique size of 224x224 dimensions for the ResNet 50 architecture and 227x227 dimensions for the AlexNet architecture.',
 'Test dataset was acquired (10 categories of fruits and vegetables) using an iPhone with uniform artificial lighting for consistency and rescaled to the above dimensions as well.',
@@ -32,6 +34,7 @@ takeaways = ['As one of my very first dissertation project I have worked on, I c
   constructor() { }
 
   ngOnInit(): void {
+    AOS.init();
   }
 
 }

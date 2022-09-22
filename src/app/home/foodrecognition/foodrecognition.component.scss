@@ -2,7 +2,8 @@
     position: relative;
     z-index: 1000;
     padding: 75px 0 6em;
-    background: linear-gradient(#eecda3,#ef629f) !important;
+    background: linear-gradient(#4ca1af,#c4e0e5) !important;
+    color: black;
 }
 
 @media (min-width: 768px) {
@@ -28,6 +29,8 @@
     margin: 0 auto;
     padding: 9em 7em 9em 8em;
     transition: all .2s ease-in-out;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .title {
@@ -36,7 +39,6 @@
     font-size: 50px;
     letter-spacing: 1px;
     line-height: 120%;
-    color: black;
     font-family: Bogart,Recoleta,Helvetica Neue,Helvetica,Arial,sans-serif !important;
     font-weight: 500;
 }
@@ -52,9 +54,8 @@
     font-size: 18px;
     line-height: 32px;
     margin-top: 4rem;
-    max-width: 40%;
+    max-width: 70%;
     text-align: justify;
-    color: black;
     letter-spacing: normal;
 }
 
@@ -84,7 +85,6 @@
     font-size: 30px;
     letter-spacing: 0.7px;
     line-height: 120%;
-    color: black;
     font-family: Bogart,Recoleta,Helvetica Neue,Helvetica,Arial,sans-serif !important;
     font-weight: bold;
 }
@@ -96,13 +96,22 @@
     margin-top: 3rem;
     max-width: 50%;
     text-align: justify;
-    color: black;
     letter-spacing: normal;
 }
 
 .bullet_icon {
     margin-top: 0.3rem;
     margin-right: 0.7rem;
+}
+
+.techUsed {
+    width: 70%;
+    margin-top: 5rem;
+}
+
+.techLogo {
+    max-height: 100px;
+    max-width: 100px;
 }
 
 @media (max-width: 600px) {
@@ -128,7 +137,6 @@
     }
 
     }
-
 
 .foodrecogimg {
     height: 800px;

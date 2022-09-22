@@ -10,8 +10,8 @@ export class NavigationBarComponent implements OnInit {
 
   links = ['Work', 'Resume', 'About Me'];
   changeNavColor = false;
-  navBGColor: any;
-  navTextColor: any;
+  navBGColor = '#434242';
+  navTextColor = 'white';
 
   constructor(private router: Router) { }
 
@@ -21,19 +21,18 @@ export class NavigationBarComponent implements OnInit {
 
   getUrlName() {
     const routeName = this.router.url;
-    console.log(routeName);
     if (routeName === '/mlworks') {
-      this.navTextColor = 'white';
-      this.navBGColor = '#28313b';
+      this.navTextColor = 'black';
+      this.navBGColor = '#ddd6f3';
     } else if (routeName === '/foodrecogn') {
       this.navTextColor = 'black';
-      this.navBGColor = '#eecda3';
+      this.navBGColor = '#4ca1af';
     } else if (routeName === '/analytics') {
-      this.navTextColor = 'white';
-      this.navBGColor = '#43cea2';
+      this.navTextColor = 'black';
+      this.navBGColor = '#9FA5D5';
     } else if (routeName === '/about') {
       this.navTextColor = 'white';
-      this.navBGColor = 'black';
+      this.navBGColor = 'rgba(0, 0, 0, 0.8)';
     } else {
       this.navTextColor = 'black';
       this.navBGColor = '#e8dee6';
